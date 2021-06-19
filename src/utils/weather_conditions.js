@@ -9,7 +9,7 @@ const weather_conditions = (cordinates1,cordinates2, callback)=>{
                     callback("Location Not Found!")
                 }else{
                 const data = body
-                callback(undefined, data.current.weather_descriptions + ". It is currently "+ data.current.temperature + " degrees out. It feels like " + data.current.feelslike + " degrees out." )
+                callback(undefined, data.current.weather_descriptions + ". It is currently "+ data.current.temperature + " degrees out. It feels like " + data.current.feelslike + " degrees out and the humidity is "+ data.current.humidity + "." )
             }
     })
 
